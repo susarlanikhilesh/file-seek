@@ -1,6 +1,6 @@
-# file-seek-failure
+# file-seek
 
-File seek doesn't work if we want to seek at some random offset <br>
+File seek doesn't work if we want to seek at some random offset for Append only file <br>
 Ref: https://go-review.googlesource.com/c/go/+/14881
 
 Tried the same in C also using Lseek and it fails with the same error
