@@ -15,7 +15,7 @@ int main() {
     fgets(path, 100, fptr);
 
     int fd = open(path, O_RDONLY);
-    off_t offset = lseek(fd, SEEK_SET, 22);
+    off_t offset = lseek(fd, 22, SEEK_SET);
 
     if ((offset < 0)) {
         printf("seek failed: %s\n", strerror(errno));

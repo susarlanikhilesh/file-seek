@@ -50,7 +50,7 @@ func readFileAtOffset(path string) (string, error) {
 	defer f.Close()
 
 	// give any whence in seek
-	offset, err := f.Seek(0, 10)
+	offset, err := f.Seek(32, io.SeekStart)
 	if err != nil {
 		return "", err
 	}
