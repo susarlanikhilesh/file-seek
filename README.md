@@ -1,9 +1,10 @@
 # file-seek
 
-File seek doesn't work if we want to seek at some random offset for Append only file <br>
-Ref: https://go-review.googlesource.com/c/go/+/14881
+File seek test to check if we can jump around the file using ReadOnly flag<br>
+Tried the same in C also using Lseek
 
-Tried the same in C also using Lseek and it fails with the same error
+## Does not work with AppendOnly
+Ref: https://go-review.googlesource.com/c/go/+/14881
 
 ## Os Info: 
 > PRETTY_NAME="Ubuntu 22.04.4 LTS" <br>
