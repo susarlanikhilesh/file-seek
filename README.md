@@ -1,4 +1,4 @@
-# file-seek
+# file-seek-failure
 
 File seek doesn't work if we want to seek at some random offset <br>
 Ref: https://go-review.googlesource.com/c/go/+/14881
