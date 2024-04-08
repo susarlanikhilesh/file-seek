@@ -1,0 +1,5 @@
+# ignore the output file where temp file path is stored
+path.txt
+
+# ignore the executable
+a.out
