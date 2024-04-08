@@ -64,6 +64,15 @@ func readFileAtOffset(path string) (string, error) {
 }
 
 func main() {
+
+	defer func() {
+		if r := recover(); r != nil {
+			fmt.Println("recovered error: ", r)
+		}
+	}()
+
+	fmt.Println("\n---------Seek test from Go---------")
+
 	path, err := writeToFile()
 	if err != nil {
 		panic(err)

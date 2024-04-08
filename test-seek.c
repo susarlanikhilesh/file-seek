@@ -1,12 +1,14 @@
-#include<stdio.h>
+#include <stdio.h>
 #include <unistd.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include<stdlib.h>
- #include <errno.h>
- #include <string.h>
+#include <stdlib.h>
+#include <errno.h>
+#include <string.h>
 
 int main() {
+
+    printf("\n---------Lseek test from C---------\n");
 
     FILE *fptr = fopen("path.txt", "r");
     char path[100];
