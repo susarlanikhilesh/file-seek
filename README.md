@@ -4,7 +4,8 @@ File seek test to check if we can jump around the file using ReadOnly flag<br>
 Tried the same in C also using Lseek
 
 ## Does not work with AppendOnly
-Ref: https://go-review.googlesource.com/c/go/+/14881
+Ref:  https://go-review.googlesource.com/c/go/+/14881 <br>
+      https://go-review.googlesource.com/c/go/+/14807/2/src/os/os_test.go <br>  
 
 ## Os Info: 
 > PRETTY_NAME="Ubuntu 22.04.4 LTS" <br>
